@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shadow Market Panel</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Fondo moderno */
+body {
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  color: #e6edf3;
+  overflow-y: scroll;
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #58a6ff;
+}
+
+/* Header */
+.header {
+  background: rgba(22, 27, 34, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 25px;
+  border-bottom: 1px solid #30363d;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+/* Contenedor */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Card moderna */
+.card {
+  background: rgba(22, 27, 34, 0.9);
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(88,166,255,0.2);
+}
+
+/* Link */
+.link {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Subtexto */
+.subtext {
+  font-size: 13px;
+  color: #8b949e;
+  margin: 15px 0;
+}
+
+/* Botón moderno */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #238636, #2ea043);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(46,160,67,0.5);
+}
+
+/* Animación entrada */
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  🚀 Shadow Market Panel
+</div>
+
+<div class="container fade-in">
+
+  <div class="card">
+
+    <p>
+      <strong>🌐 Your site is live at</strong><br><br>
+      <a class="link" href="https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/" target="_blank">
+        https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/
+      </a>
+    </p>
+
+    <div class="subtext">
+      🕒 Last deployed: just now
+    </div>
+
+    <a class="btn" href="https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/" target="_blank">
+      🔗 Visit Site
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
