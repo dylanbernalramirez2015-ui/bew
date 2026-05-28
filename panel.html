@@ -9,13 +9,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
 }
 
-/* Fondo moderno */
 body {
-  background: linear-gradient(135deg, #0d1117, #161b22);
-  color: #e6edf3;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0d1117, #05070a);
+  color: #c9d1d9;
   overflow-y: scroll;
 }
 
@@ -36,88 +35,99 @@ body {
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
   background: rgba(22, 27, 34, 0.8);
   backdrop-filter: blur(10px);
   padding: 15px 25px;
-  border-bottom: 1px solid #30363d;
   font-size: 20px;
   font-weight: bold;
-  position: sticky;
-  top: 0;
+  border-bottom: 1px solid #30363d;
+  z-index: 1000;
 }
 
 /* Contenedor */
 .container {
-  max-width: 900px;
-  margin: 50px auto;
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 20px;
 }
 
-/* Card moderna */
+/* Card PRO */
 .card {
-  background: rgba(22, 27, 34, 0.9);
+  background: linear-gradient(145deg, #161b22, #0f141a);
   border: 1px solid #30363d;
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  margin-bottom: 30px;
   transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(88,166,255,0.2);
+  box-shadow: 0 0 25px rgba(88,166,255,0.2);
 }
 
 /* Link */
 .link {
   color: #58a6ff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 }
 .link:hover {
   text-decoration: underline;
 }
 
-/* Subtexto */
+/* Texto pequeño */
 .subtext {
   font-size: 13px;
   color: #8b949e;
-  margin: 15px 0;
+  margin: 10px 0 20px;
 }
 
-/* Botón moderno */
+/* Botones PRO */
 .btn {
   display: inline-block;
-  background: linear-gradient(135deg, #238636, #2ea043);
+  background: linear-gradient(90deg, #238636, #2ea043);
   border: none;
-  color: white;
-  padding: 10px 16px;
+  padding: 10px 18px;
   border-radius: 8px;
+  color: white;
   font-size: 14px;
-  cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
+  box-shadow: 0 0 10px rgba(46,160,67,0.4);
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(46,160,67,0.5);
+  box-shadow: 0 0 20px rgba(46,160,67,0.8);
 }
 
-/* Animación entrada */
-.fade-in {
-  animation: fadeIn 1s ease;
+/* Botón secundario */
+.btn-secondary {
+  background: linear-gradient(90deg, #30363d, #484f58);
+  box-shadow: 0 0 10px rgba(88,166,255,0.2);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.btn-secondary:hover {
+  box-shadow: 0 0 20px rgba(88,166,255,0.5);
+}
+
+/* Secciones largas para scroll */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: #58a6ff;
+}
+
+.section p {
+  line-height: 1.6;
+  color: #8b949e;
 }
 </style>
 </head>
@@ -125,28 +135,65 @@ body {
 <body>
 
 <div class="header">
-  🚀 Shadow Market Panel
+🌌 SHADOW MARKET PANEL
 </div>
 
-<div class="container fade-in">
+<div class="container">
 
   <div class="card">
+    <p><strong>Your site is live at:</strong></p>
 
-    <p>
-      <strong>🌐 Your site is live at</strong><br><br>
-      <a class="link" href="https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/" target="_blank">
-        https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/
-      </a>
-    </p>
-
-    <div class="subtext">
-      🕒 Last deployed: just now
-    </div>
-
-    <a class="btn" href="https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/" target="_blank">
-      🔗 Visit Site
+    <a class="link" href="https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/" target="_blank">
+      https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/
     </a>
 
+    <div class="subtext">Last deployed: hace unos minutos</div>
+
+    <a class="btn" href="https://dylanbernalramirez2015-ui.github.io/-SHADOW-MARKET/" target="_blank">
+      🚀 Visit Site
+    </a>
+
+    <a class="btn btn-secondary" href="#">
+      ⚙️ Config
+    </a>
+  </div>
+
+  <!-- Secciones para scroll -->
+  <div class="card section">
+    <h2>🔥 About Shadow Market</h2>
+    <p>
+      Plataforma premium para compra y venta de servidores. 
+      Diseño moderno, rápido y optimizado para escalar comunidades.
+    </p>
+  </div>
+
+  <div class="card section">
+    <h2>⚡ Features</h2>
+    <p>
+      ✔ Panel moderno<br>
+      ✔ Sistema escalable<br>
+      ✔ UI estilo GitHub PRO<br>
+      ✔ Experiencia fluida con scroll premium
+    </p>
+  </div>
+
+  <div class="card section">
+    <h2>💎 Premium Access</h2>
+    <p>
+      Accede a herramientas avanzadas, gestión de servidores y ventajas exclusivas.
+    </p>
+    <a class="btn">💰 Upgrade</a>
+  </div>
+
+  <!-- Extra contenido para que haya scroll -->
+  <div class="card section">
+    <h2>📊 Stats</h2>
+    <p>Usuarios activos, crecimiento, rendimiento y métricas del sistema.</p>
+  </div>
+
+  <div class="card section">
+    <h2>🚀 Roadmap</h2>
+    <p>Próximas actualizaciones, mejoras visuales y nuevas funciones.</p>
   </div>
 
 </div>
